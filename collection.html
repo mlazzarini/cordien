@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>cordien</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<!--<span class="image avatar48"><img src="images/logo.png" alt="" /></span>-->
+							<span class=""> <img src="images/logo1.png" alt="" /> <img src="images/sottoLogo.png" alt="" /></span>
+							<!--<h1 id="title">Ironic bijoux made in Italy</h1>-->
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<!--
+
+								Prologue's nav expects links in one of two formats:
+
+								1. Hash link (scrolls to a different section within the page)
+
+								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+
+								2. Standard link (sends the user to another page/site)
+
+								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+
+							-->
+							<ul>
+								<!--<li><a href="#top" id="top-link" class="skel-layers-ignoreHref">Home</span></a></li>-->
+								<li><a href="home.html#about" id="top-link" class="skel-layers-ignoreHref">About</span></a></li>
+								<li><a href="home.html#collection" id="portfolio-link" class="skel-layers-ignoreHref">Collection</span></a></li>
+								<li><a href="home.html#lookbook" id="about-link" class="skel-layers-ignoreHref">Lookbook</span></a></li>
+								<li><a href="home.html#shop" id="contact-link" class="skel-layers-ignoreHref">Cordien shop</span></a></li>
+								<li><a href="home.html#contact" id="contact-link" class="skel-layers-ignoreHref">Contact cordien</span></a></li>
+								<li><a href="home.html#daily" id="contact-link" class="skel-layers-ignoreHref">Daily cordien</span></a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/haidettocodraro/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						</ul>
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+					
+				<!-- Collection -->
+				<section id="collection" class="one">
+						<div class="container">
+
+							<header>
+								<a class="backtext" href="home.html#collection"> &lt; back to collection </a>
+							</header>
+							
+							<!--<h3 class="bold pink contatti">HOT BIJOUX FOR CHILI GIRLS</h3>-->
+							<img id="mainImage" class="image fit50" alt="">
+								
+						</div>
+					</section>
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; Cordien. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+			</div>
+
+<!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.scrolly.min.js"></script>
+            <script src="assets/js/jquery.scrollzer.min.js"></script>
+            <script src="assets/js/skel.min.js"></script>
+            
+            <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+            
+            <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>-->
+            <script src="assets/js/responsiveslides.min.js"></script>
+            
+            <script>
+                $(document).ready(function(){
+                    var a = sessionStorage.getItem("dest");
+                    console.log("dest"+a);
+                    document.getElementById("mainImage").src= 'images/lookbook/'+a+'.png';
+                });  
+                
+                function goBack() {
+				  document.getElementById("mainImage").src= "";
+				  location.href = 'home.html#collection';
+				}
+            </script>
+            
+            <script src="assets/js/main.js"></script>
+            <script src="assets/js/util.js"></script>
+           
+
+	</body>
+</html>
