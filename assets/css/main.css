@@ -2713,7 +2713,7 @@ src: local('Mistral'), url('../fonts/mistral/MISTRAL.woff') format('woff');
 	section#about p{
 		color:black;
 		line-height:1.2em;
-		font-size: 0.9em;
+		font-size: 0.7em;
 	}
 	
 	/* SLIDER */
