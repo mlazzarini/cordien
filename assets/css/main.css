@@ -2700,10 +2700,13 @@ src: local('Mistral'), url('../fonts/mistral/MISTRAL.woff') format('woff');
 		margin: 1.5em;
 	}
 	
-	h1#address{
+	h1.address{
 		font-size: 1.1em;
-		color: #000;
 		line-height:1.5em;
+	}
+
+	.address{
+		color: #000;
 	}
 	
 	img#caniContatti{
