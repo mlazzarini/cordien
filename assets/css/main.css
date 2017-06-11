@@ -2774,3 +2774,17 @@ img.map, map area{
 .menuLogo{
 	width:100%;
 }
+
+/** Shop **/
+#shopDiv{
+	background: url("../../images/pennellata.png") no-repeat center; 
+	background-size: auto 100%;
+	color: #000;
+	font-size: 0.8em;
+}
+
+span.shop{
+	font-variant: small-caps;
+	font-size: 1.2em;
+}
+
